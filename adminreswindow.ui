@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>AdminResWindow</class>
+ <widget class="QDialog" name="AdminResWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>647</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>400</width>
+    <height>647</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>400</width>
+    <height>647</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Administrator -Reset</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget
+{
+	border-radius:3px;
+}
+QDialog{
+background-color:rgb(230, 230, 230);
+}
+QLineEdit
+{
+    font: 25 9pt &quot;Microsoft JhengHei&quot;;
+    background:white;
+    padding-left:4px ;
+    padding-top:4px ;
+    border-bottom-left-radius:4px;
+    border-bottom-right-radius:4px;
+    border: 1.2px solid rgb(189 , 189, 189);
+    border-top:transparent;
+    
+}
+QLineEdit:hover
+{
+    font: 25 9pt &quot;Microsoft JhengHei&quot;;
+    padding-top:0px ;
+    border: 1px solid rgb(21 , 131 , 221);
+}
+QLineEdit:focus
+{
+    font: 25 9pt &quot;Microsoft JhengHei&quot;;
+    padding-top:0px ;
+    border: 1px solid rgb(21 , 131 , 221);
+}
+
+QPushButton
+{
+	font: 25 9pt &quot;Microsoft JhengHei&quot;;
+    color:white;
+    background-color:rgb(75,164,242);
+    border-radius:3px;
+}
+
+QPushButton:hover
+{
+	font: 25 10pt &quot;Microsoft JhengHei&quot;;
+    color:white;
+    background-color:rgb(44 , 137 , 255);
+	border-radius:5px;
+}
+
+QPushButton:pressed
+{
+	font: 25 11pt &quot;Microsoft JhengHei&quot;;
+	border-radius:13px;
+    color:white;
+    background-color:rgb(14 , 135 , 228);
+    padding-left:5px;
+    padding-top:5px;
+}
+
+QPushButton:default
+{
+	font: 25 9pt &quot;Microsoft JhengHei&quot;;
+	border-radius:3px;
+    color:white;
+    background-color:rgb(44 , 137 , 255);
+    padding-left:3px;
+    padding-top:3px;
+    border: 2px solid rgb(17 , 120 , 221);
+}
+
+QPushButton:!enabled
+{
+	font: 25 9pt &quot;Microsoft JhengHei&quot;;
+    color:white;
+    background-color:rgb(200 , 200 , 200);
+	border-radius:5px;
+}
+QRadioButton
+{
+    font: 25 9pt &quot;Microsoft JhengHei&quot;;
+}
+QLabel#TopImage
+{
+	border-radius:90px;
+}
+</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout" stretch="100,10,10,10,75,10">
+   <item>
+    <widget class="QLabel" name="lblTitle">
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>240</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>500</width>
+       <height>240</height>
+      </size>
+     </property>
+     <property name="font">
+      <font>
+       <family>Microsoft JhengHei UI Light</family>
+       <pointsize>20</pointsize>
+      </font>
+     </property>
+     <property name="layoutDirection">
+      <enum>Qt::LeftToRight</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Plain</enum>
+     </property>
+     <property name="text">
+      <string>THUNDER CLASS</string>
+     </property>
+     <property name="textFormat">
+      <enum>Qt::AutoText</enum>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <property name="openExternalLinks">
+      <bool>false</bool>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLineEdit" name="edtName">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="font">
+      <font>
+       <family>Microsoft JhengHei</family>
+       <pointsize>9</pointsize>
+       <weight>3</weight>
+       <italic>false</italic>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="placeholderText">
+      <string>Enter Username</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLineEdit" name="edtPassword">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="font">
+      <font>
+       <family>Microsoft JhengHei</family>
+       <pointsize>9</pointsize>
+       <weight>3</weight>
+       <italic>false</italic>
+       <bold>false</bold>
+       <strikeout>false</strikeout>
+      </font>
+     </property>
+     <property name="inputMethodHints">
+      <set>Qt::ImhHiddenText|Qt::ImhNoAutoUppercase|Qt::ImhNoPredictiveText|Qt::ImhSensitiveData</set>
+     </property>
+     <property name="echoMode">
+      <enum>QLineEdit::Password</enum>
+     </property>
+     <property name="placeholderText">
+      <string>Enter New Password</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QPushButton" name="btnReset">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="font">
+      <font>
+       <family>Microsoft JhengHei</family>
+       <pointsize>9</pointsize>
+       <weight>3</weight>
+       <italic>false</italic>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>Reset the password</string>
+     </property>
+     <property name="autoDefault">
+      <bool>false</bool>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <spacer name="verticalSpacer">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>20</width>
+       <height>40</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item>
+    <widget class="QLabel" name="label">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="font">
+      <font>
+       <family>Microsoft JhengHei</family>
+      </font>
+     </property>
+     <property name="text">
+      <string>©️2020 Helin XU</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

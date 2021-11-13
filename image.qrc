@@ -1,0 +1,12 @@
+<RCC>
+    <qresource prefix="/TeacherWindow">
+        <file>image/timg.png</file>
+    </qresource>
+    <qresource prefix="/ChatWindow">
+        <file>image/CustomerService.png</file>
+        <file>image/Customer Copy.png</file>
+        <file>image/Cat.png</file>
+        <file>image/timg.png</file>
+        <file>image/fox.png</file>
+    </qresource>
+</RCC>

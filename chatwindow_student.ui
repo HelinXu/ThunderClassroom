@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ChatWindow_Student</class>
+ <widget class="QMainWindow" name="ChatWindow_Student">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>350</width>
+    <height>550</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>350</width>
+    <height>550</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>600</width>
+    <height>700</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Chat -Student</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget
+{
+	border-radius:3px;
+}
+QDialog{
+background-color:rgb(230, 230, 230);
+}
+QLineEdit
+{
+    font: 25 9pt &quot;Microsoft JhengHei&quot;;
+    background:white;
+    padding-left:4px ;
+    padding-top:4px ;
+    border-bottom-left-radius:4px;
+    border-bottom-right-radius:4px;
+    border: 1.2px solid rgb(189 , 189, 189);
+    border-top:transparent;
+    
+}
+QLineEdit:hover
+{
+    font: 25 9pt &quot;Microsoft JhengHei&quot;;
+    padding-top:0px ;
+    border: 1px solid rgb(21 , 131 , 221);
+}
+QLineEdit:focus
+{
+    font: 25 9pt &quot;Microsoft JhengHei&quot;;
+    padding-top:0px ;
+    border: 1px solid rgb(21 , 131 , 221);
+}
+
+QPushButton
+{
+	font: 25 9pt &quot;Microsoft JhengHei&quot;;
+    color:white;
+    background-color:rgb(75,164,242);
+    border-radius:3px;
+}
+
+QPushButton:hover
+{
+	font: 25 10pt &quot;Microsoft JhengHei&quot;;
+    color:white;
+    background-color:rgb(44 , 137 , 255);
+	border-radius:5px;
+}
+
+QPushButton:pressed
+{
+	font: 25 11pt &quot;Microsoft JhengHei&quot;;
+	border-radius:13px;
+    color:white;
+    background-color:rgb(14 , 135 , 228);
+    padding-left:5px;
+    padding-top:5px;
+}
+
+QPushButton:default
+{
+	font: 25 9pt &quot;Microsoft JhengHei&quot;;
+	border-radius:3px;
+    color:white;
+    background-color:rgb(44 , 137 , 255);
+    padding-left:3px;
+    padding-top:3px;
+    border: 2px solid rgb(17 , 120 , 221);
+}
+
+QPushButton:!enabled
+{
+	font: 25 9pt &quot;Microsoft JhengHei&quot;;
+    color:white;
+    background-color:rgb(200 , 200 , 200);
+	border-radius:5px;
+}
+QRadioButton
+{
+    font: 25 9pt &quot;Microsoft JhengHei&quot;;
+}
+QLabel#TopImage
+{
+	border-radius:90px;
+}
+</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QWidget" name="widget" native="true">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>430</y>
+      <width>693</width>
+      <height>200</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>0</width>
+      <height>200</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>16777215</width>
+      <height>250</height>
+     </size>
+    </property>
+    <widget class="QTextEdit" name="textEdit">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>571</width>
+       <height>251</height>
+      </rect>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btnSendToTeacher">
+     <property name="geometry">
+      <rect>
+       <x>390</x>
+       <y>60</y>
+       <width>130</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>130</width>
+       <height>25</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>130</width>
+       <height>25</height>
+      </size>
+     </property>
+     <property name="text">
+      <string>Send to Teacher</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btnSendToAll">
+     <property name="geometry">
+      <rect>
+       <x>390</x>
+       <y>90</y>
+       <width>130</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>130</width>
+       <height>25</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>130</width>
+       <height>25</height>
+      </size>
+     </property>
+     <property name="text">
+      <string>Send to All</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QListWidget" name="listWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>693</width>
+      <height>426</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QListWidget{background-color: rgb(247, 247, 247); color:rgb(51,51,51); border: 1px solid  rgb(247, 247, 247);outline:0px;}
+QListWidget::Item{background-color: rgb(247, 247, 247);}
+QListWidget::Item:hover{background-color: rgb(247, 247, 247); }
+QListWidget::item:selected{
+	background-color: rgb(247, 247, 247);
+	color:black; 
+    border: 1px solid  rgb(247, 247, 247);
+}
+QListWidget::item:selected:!active{border: 1px solid  rgb(247, 247, 247); background-color: rgb(247, 247, 247); color:rgb(51,51,51); } </string>
+    </property>
+    <property name="verticalScrollBarPolicy">
+     <enum>Qt::ScrollBarAsNeeded</enum>
+    </property>
+    <property name="horizontalScrollBarPolicy">
+     <enum>Qt::ScrollBarAlwaysOff</enum>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>350</width>
+     <height>23</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

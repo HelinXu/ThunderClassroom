@@ -1,0 +1,461 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>NewMultipleChoiceWindow</class>
+ <widget class="QDialog" name="NewMultipleChoiceWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>647</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>400</width>
+    <height>647</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>400</width>
+    <height>647</height>
+   </size>
+  </property>
+  <property name="font">
+   <font>
+    <family>Microsoft JhengHei</family>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>New Problem</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget
+{
+	border-radius:3px;
+}
+QDialog{
+background-color:rgb(230, 230, 230);
+}
+QLineEdit
+{
+font: 25 9pt &quot;Microsoft JhengHei&quot;;
+    background:white;
+    padding-left:4px ;
+    padding-top:4px ;
+    border-bottom-left-radius:4px;
+    border-bottom-right-radius:4px;
+    border: 1px solid rgb(209 , 209 , 209);
+    border-top:transparent;
+}
+QLineEdit:hover
+{
+font: 25 9pt &quot;Microsoft JhengHei&quot;;
+    padding-top:0px ;
+    border: 1px solid rgb(21 , 131 , 221);
+}
+QLineEdit:focus
+{
+font: 25 9pt &quot;Microsoft JhengHei&quot;;
+    padding-top:0px ;
+    border: 1px solid rgb(21 , 131 , 221);
+}
+
+QPushButton
+{
+	font: 25 9pt &quot;Microsoft JhengHei&quot;;
+    color:white;
+    background-color:rgb(75,164,242);
+    border-radius:3px;
+}
+
+QPushButton:hover
+{
+	font: 25 10pt &quot;Microsoft JhengHei&quot;;
+    color:white;
+    background-color:rgb(44 , 137 , 255);
+	border-radius:5px;
+}
+
+QPushButton:pressed
+{
+	font: 25 11pt &quot;Microsoft JhengHei&quot;;
+	border-radius:13px;
+    color:white;
+    background-color:rgb(14 , 135 , 228);
+    padding-left:5px;
+    padding-top:5px;
+}
+
+QPushButton:default
+{
+	font: 25 9pt &quot;Microsoft JhengHei&quot;;
+	border-radius:3px;
+    color:white;
+    background-color:rgb(44 , 137 , 255);
+    padding-left:3px;
+    padding-top:3px;
+    border: 2px solid rgb(17 , 120 , 221);
+}
+
+QPushButton:!enabled
+{
+	font: 25 9pt &quot;Microsoft JhengHei&quot;;
+    color:white;
+    background-color:rgb(200 , 200 , 200);
+	border-radius:5px;
+}
+
+QLabel#TopImage
+{
+	border-radius:90px;
+}
+</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QTextBrowser" name="textBrowser">
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>0</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>16777215</width>
+       <height>200</height>
+      </size>
+     </property>
+     <property name="font">
+      <font>
+       <family>Microsoft JhengHei</family>
+       <pointsize>9</pointsize>
+      </font>
+     </property>
+     <property name="placeholderText">
+      <string>Preview window</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QTextEdit" name="textEdit">
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>50</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>16777215</width>
+       <height>110</height>
+      </size>
+     </property>
+     <property name="font">
+      <font>
+       <family>Microsoft JhengHei</family>
+       <pointsize>9</pointsize>
+      </font>
+     </property>
+     <property name="placeholderText">
+      <string>Enter the question stem here</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <layout class="QGridLayout" name="gridLayout">
+     <item row="1" column="0">
+      <widget class="QCheckBox" name="checkBoxB">
+       <property name="font">
+        <font>
+         <family>Microsoft JhengHei</family>
+        </font>
+       </property>
+       <property name="text">
+        <string>B.</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="0">
+      <widget class="QCheckBox" name="checkBoxD">
+       <property name="font">
+        <font>
+         <family>Microsoft JhengHei</family>
+        </font>
+       </property>
+       <property name="text">
+        <string>D.</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="1">
+      <widget class="QLineEdit" name="edtChoice4">
+       <property name="font">
+        <font>
+         <family>Microsoft JhengHei</family>
+         <pointsize>9</pointsize>
+         <weight>3</weight>
+         <italic>false</italic>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="placeholderText">
+        <string>Enter Choice D. Check the box to set as answer.</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="QLineEdit" name="edtChoice1">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="font">
+        <font>
+         <family>Microsoft JhengHei</family>
+         <pointsize>9</pointsize>
+         <weight>3</weight>
+         <italic>false</italic>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="placeholderText">
+        <string>Enter Choice A. Check the box to set as answer.</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="1">
+      <widget class="QLineEdit" name="edtChoice3">
+       <property name="font">
+        <font>
+         <family>Microsoft JhengHei</family>
+         <pointsize>9</pointsize>
+         <weight>3</weight>
+         <italic>false</italic>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="placeholderText">
+        <string>Enter Choice C. Check the box to set as answer.</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1">
+      <widget class="QLineEdit" name="edtChoice2">
+       <property name="font">
+        <font>
+         <family>Microsoft JhengHei</family>
+         <pointsize>9</pointsize>
+         <weight>3</weight>
+         <italic>false</italic>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="placeholderText">
+        <string>Enter Choice B. Check the box to set as answer.</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="0">
+      <widget class="QCheckBox" name="checkBoxC">
+       <property name="font">
+        <font>
+         <family>Microsoft JhengHei</family>
+        </font>
+       </property>
+       <property name="text">
+        <string>C.</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="0">
+      <widget class="QCheckBox" name="checkBoxA">
+       <property name="font">
+        <font>
+         <family>Microsoft JhengHei</family>
+        </font>
+       </property>
+       <property name="text">
+        <string>A.</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QLabel" name="label_2">
+       <property name="font">
+        <font>
+         <family>Microsoft JhengHei</family>
+         <pointsize>9</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>Set Time Limit (0 means no limit)</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QSpinBox" name="spinTimeLimit">
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>20</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>100</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <family>Microsoft JhengHei</family>
+         <pointsize>9</pointsize>
+        </font>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <widget class="QPushButton" name="btnSave">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="font">
+      <font>
+       <family>Microsoft JhengHei</family>
+       <pointsize>9</pointsize>
+       <weight>3</weight>
+       <italic>false</italic>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>Save</string>
+     </property>
+     <property name="autoDefault">
+      <bool>false</bool>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QPushButton" name="btnSend">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="font">
+      <font>
+       <family>Microsoft JhengHei</family>
+       <pointsize>9</pointsize>
+       <weight>3</weight>
+       <italic>false</italic>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>Send</string>
+     </property>
+     <property name="autoDefault">
+      <bool>false</bool>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QPushButton" name="btnStopAnswer">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="font">
+      <font>
+       <family>Microsoft JhengHei</family>
+       <pointsize>9</pointsize>
+       <weight>3</weight>
+       <italic>false</italic>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>Stop Answering</string>
+     </property>
+     <property name="autoDefault">
+      <bool>false</bool>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLabel" name="lblCorrectRate">
+     <property name="font">
+      <font>
+       <family>Microsoft JhengHei</family>
+       <pointsize>9</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>0% correct with 0 correct answers out of 0.</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QComboBox" name="cmbReceiveAnswer">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="font">
+      <font>
+       <family>Microsoft JhengHei</family>
+       <pointsize>9</pointsize>
+      </font>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLabel" name="label">
+     <property name="maximumSize">
+      <size>
+       <width>16777215</width>
+       <height>40</height>
+      </size>
+     </property>
+     <property name="font">
+      <font>
+       <family>Microsoft JhengHei</family>
+       <pointsize>9</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>©️2020 Helin XU</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
